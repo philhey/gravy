@@ -1,0 +1,11 @@
+
+{
+    "image": "bear_idle2.png",
+    "width": 128,
+    "height": 128,
+    "offsetX": 10,
+    "offsetY": 0,
+    "numFrames": 5,
+    "fps": 6
+}
+

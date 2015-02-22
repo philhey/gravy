@@ -1,0 +1,49 @@
+
+.game-prev {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.game-prev div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    text-align:center;
+    display:inline-block;
+    border: 1px solid;
+    border-radius: 25px;
+    
+    background-size: contain;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+.game-prev .overlay {
+    top: 0px;
+    background:rgba(0,0,0,.3);
+    width: 100%;
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.game-prev .overlay:hover {
+    opacity:0;
+}
+
+.game-prev img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.game-prev p {
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+

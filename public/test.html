@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello world!</title>
+    <link rel="stylesheet" type="text/css" href="styles/test.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#news'>News</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#contact'>Contact</a></li>
+        </ul>
+    </header>
+    <div id="title">Hello world</div>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+        <tr id="john">
+            <td>John</td>
+            <td>Smith</td>
+            <td><dfn title="the age of the person">28</dfn></td>
+        </tr>
+    </table>
+    <div id="bear"></div>
+    <script>
+        $(document).ready( function() {
+
+        var elem = document.getElementById("john");
+        var bear = document.getElementById("bear");
+        var i=0;
+        setInterval(function(){ if (i%80 > 40)
+                                    elem.style.color='blue';
+                                else
+                                    elem.style.color='red';
+                                i++;
+                                var url = "url(sprites/bear-run.png) "
+                                url += -(i%8)*100 + "px 0px"
+                                bear.style.background = url;
+                                //bear.style.right = String((i%8)*100) +"px";
+                                    }, 80);
+
+
+        $('header').hover( function(){
+                //hover in
+                $(this).animate({
+                    height: '40px'
+                }, 'fast');
+
+            },
+                // hover out
+                function (){
+                $(this).animate({
+                    height: '10px'
+                }, 'fast');
+            }
+                );
+        });
+    </script>
+</body>
+
+</html>
+

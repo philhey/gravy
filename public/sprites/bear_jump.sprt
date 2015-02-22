@@ -1,0 +1,11 @@
+
+{
+    "image": "bear_jump.png",
+    "width": 128,
+    "height": 128,
+    "offsetX": 10,
+    "offsetY": 0,
+    "numFrames": 9,
+    "fps": 10
+}
+

@@ -1,0 +1,38 @@
+
+body, html {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  border: 2px solid black;
+  background: red;
+}
+
+button {
+  margin: 0.5em;
+}
+
+#options {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#framerate {
+  background-color: rgba(0,0,0,0.3);
+  padding: 1em;
+  color: white;
+}
+#image {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  padding: 1em;
+  color: white;
+}
+#game-view {
+  width: 100%;
+  height: 100%;
+}

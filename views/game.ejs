@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>platform game</title>
+<link rel='stylesheet' href='./public/styles/game.css'>
+
+<script> if (!G) var G = {}; </script> <!-- globals -->
+
+
+<script src='../public/common/underscore.js'></script>
+<script src='../public/common/async.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./public/common/webgl-utils.js"></script>
+<script src="./public/common/webgl-debug.js"></script>
+<script src="../public/gl-matrix/common.js"></script>
+<script src="../public/gl-matrix/vec4.js"></script>
+<script src="../public/gl-matrix/vec3.js"></script>
+<script src="../public/gl-matrix/vec2.js"></script>
+<script src="../public/gl-matrix/mat4.js"></script>
+
+<script src="../public/file-loader.js"> </script>
+<script src="../public/game-types.js"> </script>
+<script src="../public/keys.js"> </script>
+<script src="../public/shader.js"> </script>
+<script src="../public/entity.js"> </script>
+<script src="../public/tileset.js"> </script>
+<script src="../public/map.js"> </script>
+<script src="../public/renderer.js"></script>
+<script src="../public/sprite.js"></script>
+<script src="../public/camera.js"></script>
+<script src="../public/collision.js"></script>
+<script src="../public/player.js"></script>
+
+<!-- the game loop -->
+<script src="./public/game.js"></script>
+
+<!-- so player can connect to server-->
+<script src='/socket.io/socket.io.js'></script>
+<script src='../public/client.js'></script>
+
+</head>
+
+<body onload="start()" onkeydown="G.onKeyDown(event)" onkeyup="G.onKeyUp(event)">
+<canvas id="game-view">
+    If you're seeing this your web browser doesn't support the &lt;canvas&gt; element. Ouch!
+</canvas>
+<div id="options">
+    <button id="mask-btn" onclick="showMask()">mask</button>
+</div>
+<div id="image"></div>
+
+
+</body>
+
+</html>

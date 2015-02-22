@@ -1,0 +1,10 @@
+<% include header %>
+<p>Username: <%= user.username %></p>
+<p>Email: <%= user.email %></p>
+<button onclick="sendEmail()">Send Email</button>
+<script>
+  function sendEmail(){
+      $.post("/secure/sendEmail","send email");
+  }
+</script>
+<% include footer %>

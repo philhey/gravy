@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Lobby</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+	<h2>Welcome! Choose a game.</h2>
+    <a id="game" href='#'>no game</a>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $.ajax({url:"./game-list"}).done(function (data)
+            {
+                var game = JSON.parse(data);
+                $('#game').text(game.name);
+                $('#game').attr('href', game.host);
+            });
+        });
+    </script>
+</html>
+

@@ -1,0 +1,65 @@
+
+#title {
+    background-color: blue;
+    color: white;
+    margin: 5px;
+    width: 100px;
+    text-align: center; 
+    font-size: 1em;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 50px #888888;
+    background-color: white;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    width: 80px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#anim {
+    position: fixed;
+    left: 2px;
+    color: red;
+}
+
+
+
+td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+}
+
+#bear {
+    width: 100px;
+    height: 117px;
+}
+
